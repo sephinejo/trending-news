@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&family=Yantramanav&display=swap');
+
+:root {
+  --max-width-content: 1100px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fdd9dd;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: var(--max-width-content);
+}
+
+h2 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 3rem;
+}
+
+.carousel-outer {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.carousel-container {
+  width: var(--max-width-content);
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 65rem;
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.carousel-img {
+  height: 70%;
+  width: auto;
+  object-fit: contain;
+}
+
+.news-show {
+  background-color: #fff;
+  padding: 3rem;
+  margin: 3rem 0;
+  border: 1px solid #7e7e7e2a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.news-img {
+  height: 50rem;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
