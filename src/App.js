@@ -1,22 +1,13 @@
-import { useEffect } from 'react';
-import useNewsContext from './hooks/use-news-hook';
-import NewsList from './components/news/NewsList';
-import Top10Carousel from './components/carousel/Top10Carousel';
-import Header from './layout/Header';
+import { Outlet } from 'react-router-dom';
+import { Provider } from './context/news';
+import Navbar from './layout/Navbar';
 
 function App() {
-  const { fetchNews } = useNewsContext();
-
-  useEffect(() => {
-    fetchNews();
-  }, [fetchNews]);
-
   return (
-    <div>
-      <Header />
-      <Top10Carousel />
-      {/* <NewsList /> */}
-    </div>
+    <Provider>
+      <Navbar />
+      <Outlet />
+    </Provider>
   );
 }
 

@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: var(--max-width-content);
   height: 12rem;
-  padding: 0 2rem;
+  margin: auto;
+  padding: 0 1rem;
   color: #fff;
 }
 
 .logo {
+  text-decoration: none;
+  color: inherit;
   display: flex;
   align-items: flex-end;
   cursor: pointer;
@@ -32,8 +36,13 @@
 
 .menuLink {
   text-decoration: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 500;
   color: inherit;
+  outline: none;
+  border: none;
   cursor: pointer;
   transition: all 150ms ease;
 }
