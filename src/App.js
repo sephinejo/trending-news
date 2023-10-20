@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import useNewsContext from './hooks/use-news-hook';
-import NewsList from './components/NewsList';
-import Top10Carousel from './components/Top10Carousel';
+import NewsList from './components/news/NewsList';
+import Top10Carousel from './components/carousel/Top10Carousel';
+import Header from './layout/Header';
 
 function App() {
   const { fetchNews } = useNewsContext();
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1>Reading News Trend</h1>
+      <Header />
       <Top10Carousel />
       {/* <NewsList /> */}
     </div>

@@ -1,4 +1,4 @@
-import useNewsContext from '../hooks/use-news-hook';
+import useNewsContext from '../../hooks/use-news-hook';
 import NewsShow from './NewsShow';
 
 function NewsList() {

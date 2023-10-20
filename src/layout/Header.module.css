@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12rem;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.logoIcon {
+  width: 4.5rem;
+  margin-right: 0.7rem;
+  transition: all 250ms ease;
+}
+
+.logoIcon:hover {
+  transform: scale(1.1);
+}
+
+.logoText {
+  font-family: 'Esteban', serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: inherit;
+}
+
+.menuLink {
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.menuLink:hover {
+  filter: brightness(60%);
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import useNewsContext from '../hooks/use-news-hook';
+import useNewsContext from '../../hooks/use-news-hook';
 import CarouselShow from './CarouselShow';
 
 function Top10Carousel() {
