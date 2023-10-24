@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import useNewsContext from '../../hooks/use-news-hook';
 import CarouselShow from './CarouselShow';
+import classes from './Top10Carousel.module.css';
 
 function Top10Carousel() {
   const [current, setCurrent] = useState(0);
-  const { news } = useNewsContext();
+  const { mainNews } = useNewsContext();
 
   const carouselInfiniteScroll = () => {
-    if (current === news.length - 1) {
+    if (current === mainNews.length - 1) {
       return setCurrent(0);
     }
     return setCurrent(current + 1);
@@ -20,13 +21,13 @@ function Top10Carousel() {
     return () => clearInterval(interval);
   });
 
-  const renderedNews = news.map((newsEl, i) => {
+  const renderedNews = mainNews.map((newsEl, i) => {
     return <CarouselShow key={i} news={newsEl} current={current} />;
   });
 
   return (
-    <div className='carousel-outer'>
-      <div className='carousel-container'>{renderedNews}</div>
+    <div className={classes.carouselOuter}>
+      <div className={classes.carouselContainer}>{renderedNews}</div>
     </div>
   );
 }

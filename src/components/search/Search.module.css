@@ -1,0 +1,36 @@
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 4rem;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 22.8rem;
+  top: 1.3rem;
+  font-size: 1.8rem;
+}
+
+.searchInput {
+  font-family: inherit;
+  font-size: 1.55rem;
+  padding: 0 4.4rem;
+  width: 60rem;
+  height: 4.5rem;
+  margin-right: 0.3rem;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  border: none;
+}
+
+.searchBtn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 13rem;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

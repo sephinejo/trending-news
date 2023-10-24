@@ -1,0 +1,14 @@
+.carouselOuter {
+  width: 75%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  /* width: var(--max-width-content); */
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
