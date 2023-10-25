@@ -8,7 +8,6 @@ function Navbar() {
 
   useEffect(() => {
     onUserStateChanged((user) => {
-      console.log(user);
       setUser(user);
     });
   }, []);
@@ -27,7 +26,7 @@ function Navbar() {
         <img
           className={classes.logoIcon}
           src='favicon.png'
-          alt='trending news logo'
+          alt='Trending News'
         />
         <h1 className={classes.logoText}>Trending News</h1>
       </Link>

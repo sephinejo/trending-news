@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: var(--max-width-content);
+  /* width: var(--max-width-content); */
   height: 12rem;
   margin: auto;
   padding: 0 1rem;
@@ -44,9 +44,9 @@
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 150ms ease;
+  transition: all 350ms ease;
 }
 
 .menuLink:hover {
-  filter: brightness(60%);
+  text-shadow: 0 0 7px #eee, 0 0 7px #eee, 0 0 21px #eee;
 }

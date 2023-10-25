@@ -1,10 +1,7 @@
-import useNewsContext from '../../hooks/use-news-hook';
 import NewsShow from './NewsShow';
 
-function NewsList() {
-  const { news } = useNewsContext();
-
-  const renderedNews = news.map((newsObj) => {
+function NewsList(news) {
+  const renderedNews = news.news.map((newsObj) => {
     return <NewsShow key={Math.random()} news={newsObj} />;
   });
 

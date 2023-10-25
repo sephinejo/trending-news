@@ -3,6 +3,7 @@
 :root {
   --max-width-content: 1160px;
   --color-priamry: #061e35;
+  --color-primary-opacity: #061e3580;
 }
 
 html {
@@ -29,22 +30,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.news-show {
-  background-color: #fff;
-  padding: 3rem;
-  margin: 3rem 0;
-  border: 1px solid #7e7e7e2a;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.news-img {
-  height: 50rem;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 1rem;
 }

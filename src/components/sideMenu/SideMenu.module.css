@@ -1,4 +1,28 @@
 .sideMenuContainer {
   width: 20%;
-  background-color: #f1f1f1;
+  background-color: var(--color-primary-opacity);
+  color: white;
+  padding: 2rem;
+}
+
+.sideMenuTitle {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.sideMenuList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 2.5rem;
+}
+
+.sideMenuItem {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
 }

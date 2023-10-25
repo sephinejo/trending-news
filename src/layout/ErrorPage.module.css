@@ -1,0 +1,27 @@
+.errorContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.errorTitle {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.errorMessage {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 3px 10px;
+  cursor: pointer;
+}

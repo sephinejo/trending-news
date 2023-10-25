@@ -1,0 +1,19 @@
+.newsShow {
+  background-color: #fff;
+  color: black;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  border: 1px solid #7e7e7e2a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.newsImg {
+  height: 15rem;
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}

@@ -3,7 +3,7 @@ import Top10Carousel from '../components/carousel/Top10Carousel';
 import useNewsContext from '../hooks/use-news-hook';
 import classes from './Home.module.css';
 import Search from '../components/search/Search';
-import SubNavbar from '../components/sideMenu/SideMenu';
+import SideMenu from '../components/sideMenu/SideMenu';
 
 function Home() {
   const { fetchMainNews, searchNews } = useNewsContext();
@@ -22,7 +22,7 @@ function Home() {
       <Search onSearch={searchHandler} />
       <section className={classes.homeMain}>
         <Top10Carousel />
-        <SubNavbar />
+        <SideMenu />
       </section>
     </div>
   );

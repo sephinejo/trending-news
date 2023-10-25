@@ -8,6 +8,7 @@ const API_KEY = '15982c6daa9949a0afe5eaccf6b4e12b';
 function Provider({ children }) {
   const [mainNews, setMainNews] = useState([]);
   const [searchedNews, setSearchedNews] = useState([]);
+  const [categoryNews, setCategoryNews] = useState([]);
 
   const fetchMainNews = useCallback(async () => {
     const res = await axios.get(
@@ -19,17 +20,29 @@ function Provider({ children }) {
 
   const searchNews = async (query) => {
     const res = await axios.get(
-      `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`
+      `https://newsapi.org/v2/everything?q=${query}&language=en&apiKey=${API_KEY}`
     );
 
+    setSearchedNews(res.data.articles);
+    return res.data.articles;
+  };
+
+  const fetchCategoryNews = async (category) => {
+    const res = await axios.get(
+      `https://newsapi.org/v2/top-headlines?category=${category}&language=en&apiKey=${API_KEY}`
+    );
+
+    setCategoryNews(res.data.articles);
     return res.data.articles;
   };
 
   const valueToShare = {
     mainNews,
     searchedNews,
+    categoryNews,
     fetchMainNews,
     searchNews,
+    fetchCategoryNews,
   };
 
   return (

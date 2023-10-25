@@ -1,9 +1,14 @@
+import classes from './NewsShow.module.css';
+
 function NewsShow({ news }) {
-  const { title, author, description, publishedAt, urlToImage } = news;
+  const { title, author, description, publishedAt, urlToImage, url } = news;
 
   return (
-    <div className='news-show'>
-      <img className='news-img' src={urlToImage} alt='' />
+    <div
+      className={classes.newsShow}
+      onClick={() => (window.location.href = url)}
+    >
+      <img className={classes.newsImg} src={urlToImage} alt='' />
       <h3>{title}</h3>
       <p>{description}</p>
       <small>

@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import ErrorPage from './layout/ErrorPage';
 import Home from './pages/Home';
-import News from './pages/News';
+import CategoryNews from './pages/CategoryNews';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'news/:newsTitle', element: <News /> },
+      { path: 'news/category/:categoryName', element: <CategoryNews /> },
     ],
   },
 ]);
