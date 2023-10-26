@@ -1,5 +1,14 @@
-.carouselOuter {
+.container {
   width: 75%;
+}
+
+.carouselTitle {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.carouselOuter {
   background-color: #f1f1f1;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -7,7 +16,6 @@
 }
 
 .carouselContainer {
-  /* width: var(--max-width-content); */
   margin: auto;
   display: flex;
   flex-wrap: nowrap;

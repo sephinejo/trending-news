@@ -9,6 +9,10 @@ function Search({ onSearch }) {
     setQuery(e.target.value);
   };
 
+  const clickHandler = () => {
+    setQuery('');
+  };
+
   const submitHandler = (e) => {
     e.preventDefault();
     onSearch(query);
@@ -22,9 +26,12 @@ function Search({ onSearch }) {
         className={classes.searchInput}
         name='query'
         value={query}
-        placeholder='Search an article.....'
+        placeholder='Search an article...'
         onChange={changeHandler}
       ></input>
+      <button type='reset' className={classes.cancelBtn} onClick={clickHandler}>
+        &#10005;
+      </button>
       <button type='submit' className={classes.searchBtn}>
         Search
       </button>

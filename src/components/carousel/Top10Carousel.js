@@ -26,8 +26,11 @@ function Top10Carousel() {
   });
 
   return (
-    <div className={classes.carouselOuter}>
-      <div className={classes.carouselContainer}>{renderedNews}</div>
+    <div className={classes.container}>
+      <h1 className={classes.carouselTitle}>Today's Top News</h1>
+      <div className={classes.carouselOuter}>
+        <div className={classes.carouselContainer}>{renderedNews}</div>
+      </div>
     </div>
   );
 }

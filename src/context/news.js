@@ -23,8 +23,8 @@ function Provider({ children }) {
       `https://newsapi.org/v2/everything?q=${query}&language=en&apiKey=${API_KEY}`
     );
 
-    setSearchedNews(res.data.articles);
-    return res.data.articles;
+    setSearchedNews(res.data.articles.slice(0, 20));
+    return res.data.articles.slice(0, 20);
   };
 
   const fetchCategoryNews = async (category) => {

@@ -10,7 +10,7 @@ function CategoryNews() {
 
   useEffect(() => {
     fetchCategoryNews(category);
-  }, [category]);
+  }, []);
 
   return (
     <div className={classes.container}>
