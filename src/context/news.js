@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const NewsContext = createContext();
 
-const API_KEY = '15982c6daa9949a0afe5eaccf6b4e12b';
+const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
 
 function Provider({ children }) {
   const [mainNews, setMainNews] = useState([]);
