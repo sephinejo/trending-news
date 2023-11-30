@@ -23,8 +23,8 @@ function Provider({ children }) {
       `https://newsapi.org/v2/everything?q=${query}&language=en&apiKey=${API_KEY}`
     );
 
-    setSearchedNews(res.data.articles.slice(0, 20));
-    return res.data.articles.slice(0, 20);
+    setSearchedNews(res.data.articles);
+    return res.data.articles;
   };
 
   const fetchCategoryNews = async (category) => {
@@ -32,6 +32,7 @@ function Provider({ children }) {
       `https://newsapi.org/v2/top-headlines?category=${category}&language=en&apiKey=${API_KEY}`
     );
 
+    console.log(res.data.articles);
     setCategoryNews(res.data.articles);
     return res.data.articles;
   };

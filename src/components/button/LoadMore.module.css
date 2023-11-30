@@ -1,0 +1,23 @@
+.loadMore {
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.7rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+  display: block;
+  margin: 45px auto;
+  box-shadow: rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+
+.loadMore:hover {
+  transition: all 500ms ease;
+  transform: translateY(3px) scale(1.03);
+}
