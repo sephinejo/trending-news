@@ -1,5 +1,5 @@
 # Trending News
-Built a live trending news website with functionalities of searching articles, showing category news, scrolling with load more btn, login and logout with Google account, and transition of light and dark theme with React.js.
+Built a live trending news website with functionalities of searching articles, showing category news, scrolling with load more button, login and logout with Google account, and transition of light and dark theme with React.js.
 
 ## Screenshots
 - Dark Theme
