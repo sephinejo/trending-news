@@ -1,7 +1,7 @@
 .sideMenuContainer {
   width: 20%;
   background-color: var(--color-primary-opacity);
-  color: white;
+  color: var(--color-white);
   padding: 2rem;
   margin-top: 4.9rem;
 }

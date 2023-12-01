@@ -4,6 +4,7 @@ import Navbar from './layout/Navbar';
 import useNewsContext from './hooks/use-news-hook';
 import Search from './components/search/Search';
 import Footer from './layout/Footer';
+import { LightModeProvider } from './context/LightMode';
 
 function App() {
   const { searchNews } = useNewsContext();
@@ -15,12 +16,12 @@ function App() {
   };
 
   return (
-    <div>
+    <LightModeProvider>
       <Navbar />
       <Search onSearch={searchHandler} />
       <Outlet />
       <Footer />
-    </div>
+    </LightModeProvider>
   );
 }
 

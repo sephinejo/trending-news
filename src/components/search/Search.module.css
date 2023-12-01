@@ -1,13 +1,15 @@
 .searchForm {
   display: flex;
   justify-content: center;
-  margin: 3rem 0 4rem;
+  width: fit-content;
+  margin: 3rem auto 4rem;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .searchIcon {
   position: absolute;
-  left: 22.8rem;
+  left: 1.5rem;
   top: 1.3rem;
   font-size: 1.8rem;
 }
@@ -15,7 +17,7 @@
 .searchInput {
   font-family: inherit;
   font-size: 1.55rem;
-  padding: 0 4.4rem;
+  padding: 0 5rem;
   width: 60rem;
   height: 4.5rem;
   margin-right: 0.3rem;
@@ -26,7 +28,7 @@
 
 .cancelBtn {
   position: absolute;
-  right: 36rem;
+  right: 14.5rem;
   top: 1.1rem;
   background-color: transparent;
   width: 2.2rem;
@@ -45,4 +47,5 @@
   outline: none;
   border: none;
   cursor: pointer;
+  /* visibility: hidden; */
 }

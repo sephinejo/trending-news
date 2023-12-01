@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Navbar.module.css';
 import { login, logout, onUserStateChanged } from '../api/firebase';
+import { GoMoon, GoSun } from 'react-icons/go';
+import useLightMode from '../hooks/use-light-mode-hook';
 
 function Navbar() {
   const [user, setUser] = useState(null);
+  const { lightMode, toggleLightMode } = useLightMode();
 
   useEffect(() => {
     onUserStateChanged((user) => {
@@ -31,6 +34,11 @@ function Navbar() {
         <h1 className={classes.logoText}>Trending News</h1>
       </Link>
       <div className={classes.menu}>
+        {lightMode ? (
+          <GoMoon className={classes.modeIcon} onClick={toggleLightMode} />
+        ) : (
+          <GoSun className={classes.modeIcon} onClick={toggleLightMode} />
+        )}
         {!user ? (
           <button className={classes.menuLink} onClick={handleLogin}>
             Login

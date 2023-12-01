@@ -5,7 +5,7 @@ const NewsContext = createContext();
 
 const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
 
-function Provider({ children }) {
+function NewsProvider({ children }) {
   const [mainNews, setMainNews] = useState([]);
   const [searchedNews, setSearchedNews] = useState([]);
   const [categoryNews, setCategoryNews] = useState([]);
@@ -51,5 +51,5 @@ function Provider({ children }) {
   );
 }
 
-export { Provider };
+export { NewsProvider };
 export default NewsContext;

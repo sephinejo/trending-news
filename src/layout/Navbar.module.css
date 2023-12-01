@@ -5,7 +5,7 @@
   height: 7rem;
   margin: auto;
   padding: 0 1rem;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .logo {
@@ -33,6 +33,17 @@
   color: inherit;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modeIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .menuLink {
   text-decoration: none;
   background-color: transparent;
@@ -47,5 +58,6 @@
 }
 
 .menuLink:hover {
-  text-shadow: 0 0 7px #eee, 0 0 7px #eee, 0 0 21px #eee;
+  text-shadow: 0 0 7px var(--color-light-gray), 0 0 7px var(--color-light-gray),
+    0 0 21px var(--color-light-gray);
 }

@@ -1,19 +1,28 @@
 .loadMore {
-  color: white;
+  color: var(--color-black);
   font-family: inherit;
   font-weight: 600;
   font-size: 1.7rem;
-  background-color: transparent;
+  background-color: var(--color-white);
   outline: none;
   border: none;
   border-radius: 40px;
   padding: 10px 20px;
   display: block;
   margin: 45px auto;
-  box-shadow: rgba(255, 255, 255, 0.12) 0px -12px 30px,
-    rgba(255, 255, 255, 0.12) 0px 4px 6px,
-    rgba(255, 255, 255, 0.17) 0px 12px 13px,
-    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  box-shadow: rgba(
+        var(--color-white),
+        var(--color-white),
+        var(--color-white),
+        0.12
+      )
+      0px -12px 30px,
+    rgba(var(--color-white), var(--color-white), var(--color-white), 0.12) 0px
+      4px 6px,
+    rgba(var(--color-white), var(--color-white), var(--color-white), 0.17) 0px
+      12px 13px,
+    rgba(var(--color-white), var(--color-white), var(--color-white), 0.09) 0px -3px
+      5px;
   cursor: pointer;
 }
 

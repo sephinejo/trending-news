@@ -14,7 +14,7 @@ function CategoryNews() {
 
   return (
     <div className={classes.container}>
-      <h1>{category.charAt(0).toUpperCase() + category.slice(1)} News</h1>
+      <h1>{category.charAt(0).toUpperCase() + category.slice(1)} News (20)</h1>
       <NewsList news={categoryNews} />
     </div>
   );

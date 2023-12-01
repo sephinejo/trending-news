@@ -15,6 +15,7 @@ function Search({ onSearch }) {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    if (query === '') return;
     onSearch(query);
   };
 
