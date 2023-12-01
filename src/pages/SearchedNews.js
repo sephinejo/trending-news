@@ -10,7 +10,7 @@ function SearchedNews() {
 
   useEffect(() => {
     searchNews(params);
-  }, []);
+  }, [params]);
 
   return (
     <div className={classes.container}>

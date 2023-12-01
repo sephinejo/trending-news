@@ -32,7 +32,6 @@ function NewsProvider({ children }) {
       `https://newsapi.org/v2/top-headlines?category=${category}&language=en&apiKey=${API_KEY}`
     );
 
-    console.log(res.data.articles);
     setCategoryNews(res.data.articles);
     return res.data.articles;
   };
