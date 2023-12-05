@@ -27,21 +27,11 @@ export async function login() {
       console.log(user);
       return user;
     })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.customData.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
-      console.log(error);
-    });
+    .catch(console.error);
 }
 
 export async function logout() {
-  return signOut(auth)
-    .then(() => console.log('Logged out'))
-    .catch((error) => {
-      console.log(error);
-    });
+  return signOut(auth).catch(console.error);
 }
 
 export async function onUserStateChanged(callback) {

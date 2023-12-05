@@ -36,12 +36,17 @@
 .menu {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .modeIcon {
   font-size: 20px;
   cursor: pointer;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 40px;
 }
 
 .menuLink {

@@ -10,9 +10,7 @@ function Navbar() {
   const { lightMode, toggleLightMode } = useLightMode();
 
   useEffect(() => {
-    onUserStateChanged((user) => {
-      setUser(user);
-    });
+    onUserStateChanged(setUser);
   }, []);
 
   const handleLogin = () => {
@@ -44,9 +42,16 @@ function Navbar() {
             Login
           </button>
         ) : (
-          <button className={classes.menuLink} onClick={handleLogout}>
-            Logout
-          </button>
+          <>
+            <img
+              className={classes.photo}
+              src={user.photoURL}
+              alt='user thumbnail'
+            />
+            <button className={classes.menuLink} onClick={handleLogout}>
+              Logout
+            </button>
+          </>
         )}
       </div>
     </header>
