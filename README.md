@@ -1,7 +1,7 @@
 # Trending News
 Built a live trending news website with functionalities of searching articles, showing category news, scrolling with load more button, login and logout with Google account, and transition of light and dark theme using News API and React.js.
 
-## Live Demo ****Live news are now shown because of API restriction***
+## Live Demo ****Live news are not shown because of API restriction***
 [Trending News](https://65aaf19132bdb712dd48628a--celebrated-semifreddo-708ad1.netlify.app/)
 
 ## Screenshots
